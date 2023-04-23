@@ -1,25 +1,131 @@
 /* Lab 3 stylesheet */
 
+@font-face {
+    font-family: "castoro";
+    src: url("./Castoro_Titling/CastoroTitling-Regular.ttf");
+}
+
+* {
+    font-family: "castoro", "Bitstream Vera Serif", serif;
+}
+
+
+
 h1 {
     color: rgb(100, 100, 100);
     background-color: #c48e92;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 100px;
+    margin-right: 30px;
     width: 30vw;
     height: 10vh;
     font-size: 30px;
+    text-align: center;
 }
 
 nav {
+    margin: 0 0 0 30vw;
     color: #0FF000;
     font-size: 3em;
     max-width: 400pt;
 }
 
+
 a {
+    position: relative;
     color: hsl(0, 100%, 50%);
+    margin: auto;
     min-width: 5in;
+    padding-top: 1vw;
+    padding-bottom: 2pt;
+    padding-left: 1vh; 
+    padding-right: 1em;
+    text-decoration: none;
+
+
+}
+
+a[href="#intro"] {
+    color: blue;
+}
+a:hover {
+    color: hsl(269, 59%, 35%);
+
+
+
 }
 
 h2 {
+    display: block;
     color: orchid;
+    padding: 30px 0 30px 0;
+    border-style: dotted;
+    border-color: orange;
+    border-width: 10px;
+    border-radius: 5px;
 }
+
+
+.iline {
+    display: inline;
+    width: 30vw;
+    max-width: 30vw;
+    
+}
+
+audio ~ video {
+    position: absolute;
+    right: 30px;
+}
+
+button:active {
+    background-color: aqua;
+}
+
+fieldset {
+    width: 90vw;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+#tasks {
+    display: grid;
+    
+}
+
+div.one {
+    grid-column-start: 2;
+    grid-row-start: 1;
+
+}
+
+#tasks > #two {
+    grid-column-start: 4;
+    grid-row-start: 5;
+}
+#tasks #three {
+    grid-column-start: 6;
+    grid-row-start: 10;
+    grid-row-start: 20;
+
+}
+h2 + nav {
+    background-color: pink;
+}
+
+
+Child Combinator (element > element)
+General sibling combinator (element ~ element)
+
+
+@media (max-width: 500px) {
+    body, details {
+        background-color: orange;
+    }
+  }
 
