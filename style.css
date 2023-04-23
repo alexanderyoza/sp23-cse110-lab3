@@ -1,0 +1,25 @@
+/* Lab 3 stylesheet */
+
+h1 {
+    color: rgb(100, 100, 100);
+    background-color: #c48e92;
+    width: 30vw;
+    height: 10vh;
+    font-size: 30px;
+}
+
+nav {
+    color: #0FF000;
+    font-size: 3em;
+    max-width: 400pt;
+}
+
+a {
+    color: hsl(0, 100%, 50%);
+    min-width: 5in;
+}
+
+h2 {
+    color: orchid;
+}
+
