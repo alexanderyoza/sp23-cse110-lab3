@@ -119,10 +119,6 @@ h2 + nav {
 }
 
 
-Child Combinator (element > element)
-General sibling combinator (element ~ element)
-
-
 @media (max-width: 500px) {
     body, details {
         background-color: orange;
